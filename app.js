@@ -15,11 +15,10 @@ const cors = require("cors");
 app.use(cors());
 // app.use(fileUpload());
 
-require('./utils/dbConnection')
+// require('./utils/dbConnection');
+require('./utils/allTableRelationships')
 
-// require("./Utils/All_Routes")(app)
-
-// require("./Utils/All_Tables_Relationship"); //Requiring all table relationship
+require('./utils/allRoutes')(app);
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT);

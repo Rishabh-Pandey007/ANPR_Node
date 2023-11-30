@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('anpr_logs', 'root', '', {
+const sequelize = new Sequelize('rr_project', 'root', '', {
     host: 'localhost',
     port: 3306,
     dialect: 'mysql',
